@@ -20,6 +20,8 @@ PGNs = ["", "1.d4 e6 2.a4 Qg5 3.a5 Qxc1 4.Ra2 c5 5.h3 Qxc2 6.Qc1 Qf5 7.d5 b5 8.N
 "1. a4 { A00 Ware Opening } b5 2. a5 b4 3. Ra4 h6 4. f4 e6 5. e4 c6 6. Bc4 f6 7. d4 Qe7 8. Qd2 Qf7 9. Qd1 Qh5 10. Qd2 Qh4+ 11. Qf2 Qg5 12. Bxe6 Kd8 13. Kd1 Ke8 14. Bxd7+ Kd8 15. Bxc6 Nxc6 16. Ke2 Qxa5 17. f5 Ke8 18. Bxh6 Kd8 19. Bxg7 Nh6 20. Bxh6 Ke8 21. Bd2 Qb5+ 22. Ke1 Rh3 23. gxh3 Qb6 24. Qf1 Qb5 25. Qf2 Qb6 26. Ke2 Qb5+ { Draw } 1/2-1/2",
 "1. a4 { A00 Ware Opening } f5 2. d4 e5 3. d5 Bb4+ 4. Qd2 { Draw } 1/2-1/2"];
 
+PGNstring = PGNs.join(";");
+
 boardToBinary = function(string){
 	subString = "";
 	finalFinalString = "";
@@ -151,7 +153,7 @@ compiler = function(tokens){
 }
 
 runJS = function(js){
-	eval(js);
+	return eval(js);
 }
 //PGN2FEN(PGNs)
 runJS(compiler(tokenizer(PGNs.map(PGN2FEN))));
