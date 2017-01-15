@@ -11,6 +11,8 @@ builtins = ["console.log", "alert", "break", "do", "in", "typeof", "case", "else
 "/", "/=",
 "}"];
 
+//checkmate: 1. e4 e5 2. Bc4 c6 3. Qf3 a5 4. Qxf7#
+
 //alert: 1. e4 d5 2. exd5
 PGNs = ["", "1.d4 e6 2.a4 Qg5 3.a5 Qxc1 4.Ra2 c5 5.h3 Qxc2 6.Qc1 Qf5 7.d5 b5 8.Nf3 e5",
 "1. e4 e5 2. d4 d5 { C21 King's Pawn Game: Beyer Gambit } 3. exd5 exd4 4. Nd2 g5 5. Ne4 f5 6. Nc3 h5 7. Na4 b5 8. Rb1 Qe7+ 9. Qe2 Qxe2+ 10. Bxe2 d3 11. Kd2 dxe2 12. Kd3 e1=Q 13. Kd4 Qxg1 14. Kc3 Qxc1 15. Kd3 Qxb1 16. Rxb1 b4 17. Rg1 b3 18. Kd2 Bb4+ 19. Kd1 Ba6 20. Kc1 f4 21. Kd1 Bc5 22. Ke1 Bb4+ { White resigns } 0-1",
@@ -69,7 +71,7 @@ FENToTokenPart = function(FEN){
 		number = parseInt(a, 2);//%numOfTokens;
 	}
 	//console.log(checks);
-	if(checks.indexOf(/q/) > -1){
+	if(checks.indexOf('q') > -1){
 		//BLACK CHECK
 		return {type:"identifier", value: number}
 		//return a IDENTIFIER subtoken (value = 1 ascii character)
@@ -77,7 +79,7 @@ FENToTokenPart = function(FEN){
 		//WHITE CHECK
 		return {type:"string", value:number}
 		//return a STRING LITERAL subtoken (value = 1 ascii character)
-	} else if(checks.indexOf(/[Kk]/) > -1){
+	} else if(checks.indexOf('K') > -1 || checks.indexOf('k') > -1){
 		//CHECKMATE or DRAW
 		return {type:"checkmate", value:number}
 		//return CHECKMATE token
