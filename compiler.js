@@ -51,7 +51,7 @@ boardToBinary = function(string){
 
 FENToTokenPart = function(FEN){
 	//console.log("asdf");
-	board = FEN.split(" ")[0];
+	board_ = FEN.split(" ")[0];
 	turn = FEN.split(" ")[1];
 	castles = FEN.split(" ")[2];
 	_____passant____ = FEN.split(" ")[3];
@@ -59,7 +59,7 @@ FENToTokenPart = function(FEN){
 	moveCount = FEN.split(" ")[5];
 	checks = FEN.split(" ")[6];
 	castled = FEN.split(" ")[7];
-	a = boardToBinary(board);
+	a = boardToBinary(board_);
 	//var a = '01001011';
 	if(a == ''){
 		number = 0;
