@@ -1,0 +1,43 @@
+<script src="http://www.willangles.com/projects/chessboard/js/chess.js"></script>
+<script src="http://www.willangles.com/projects/chessboard/js/chessboard-0.3.0.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src ="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.willangles.com/projects/chessboard/css/chessboard-0.3.0.css">
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="codepen.css">
+
+
+<div id="board"></div>
+
+
+<p id="status-wrapper">Status: <span id="status"></span></p>
+<p id="pgn-wrapper">PGN: <span id="pgn"></span></p>
+<p id="fen-wrapper">FEN: <span id="fen"></span></p>
+<div class="btn-wrapper">
+  <input class="game-button" type="button" id="startBtn" value="Start" />
+  <input class="game-button" type="button" id="clearBtn" value="Clear" />
+  <input class="game-button" type="button" id="colorBtn" value="Flip" />
+</div>
+
+<script type="text/javascript" src="codepen.js"></script>
+
+
+
+<p id="pgn-wrap">Insert PGN: <input id="PGN_input" type = "text" name='sequence'>
+    <button id="PGN_button">Submit</button></p>
+    
+<p id="fen-wrap">Output FEN: <span id="outFEN"></span></p>
+
+<script >
+    function myFunction(){
+        console.log(document.getElementById("PGN_input").value);
+        //alert('start');
+        //alert(PGN2FEN("1. e4 e5 2. d4 d5 { C21 King's Pawn Game: Beyer Gambit } 3. exd5 exd4"));
+    };
+    document.getElementById("PGN_button").addEventListener("click", myFunction);
+    //document.getElementById('fen-wrap').innerHTML = fen;
+</script>
+<script type = 'text/javascript' src = 'codepen.js'>
+    document.getElementById('fen-wrap').innerHTML = PGN2FEN(document.getElementById('PGN_input').value);
+</script>
+<script type="text/javascript" src="compiler.js"></script>

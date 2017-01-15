@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,900,300);
+
+* {
+  font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+  color:#2E313F;
+}
+html {
+  overflow:none;
+}
+body {
+  background-color:#d89454;
+  overflow:none;
+}
+p#status-wrapper {
+  background-color:#756563;
+  width:100%;
+  padding:1em;
+  font-weight:900;
+  font-size:1.125em;
+  position:absolute;
+  top:-18px;
+  left:0;
+  color:#fffffa;
+}
+p#pgn-wrapper {
+  font-weight:900;
+  font-size:1.25em;
+  max-width:600px;
+  margin:0 auto;
+  
+}
+span#pgn{
+  font-size:0.85em;
+  font-weight:300;
+  color:#FFF;
+}
+p#fen-wrapper {
+  font-weight:900;
+  font-size:1.25em;
+  max-width:600px;
+  margin:0 auto;
+  
+}
+span#fen{
+  font-size:0.85em;
+  font-weight:300;
+  color:#FFF;
+}
+p#pgn-wrap {
+  font-weight:900;
+  font-size:1.25em;
+  max-width:600px;
+  margin:0 auto; 
+}
+form{
+  font-weight:900;
+  font-size:1.00em;
+  max-width:450px;
+  margin:0 auto;
+}
+p#FEN-wrap {
+  font-weight:900;
+  font-size:1.25em;
+  max-width:600px;
+  margin:0 auto;
+  
+}
+span#outFEN{
+  font-size:0.85em;
+  font-weight:300;
+  color:#FFF;
+}
+.btn-wrapper {
+  width:100%;
+  max-width:600px;
+  min-width:320px;
+  margin:0 auto;
+}
+#startBtn, #clearBtn, #colorBtn {
+  text-align:center;
+  position:relative;
+  font-size:1.78em;
+  background:#756563;
+  color:#fffffa;
+  font-weight:900;  
+  padding:0em;
+  width:197px;  
+  max-width:197px;
+}
+
+#board {
+  border
+  width:100%;
+  max-width:600px;
+  min-width:320px;
+  margin:3.75em auto 1.25em auto;  
+}
+.board-b72b1 {
+  border: 15px outset #756563;
+}
+/* white square */
+.white-1e1d7 {
+  background-color: #F2F4F1;
+  color: #5a3336;
+}
+/* black square */
+.black-3c85d {
+  background-color: #5A3336;
+  color: #f2f4f1;
+}
+
+/* highlighted square */
+.highlight1-32417, .highlight2-9c5d2 {
+  -webkit-box-shadow: inset 0 0 3px 3px rgba(209, 75, 45, 0.15);
+  -moz-box-shadow: inset 0 0 3px 3px rgba(209, 75, 45, 0.15);
+  box-shadow: inset 0 0 3px 3px rgba(209, 75, 45, 0.15);
+}
