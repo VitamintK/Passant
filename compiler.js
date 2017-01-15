@@ -11,7 +11,7 @@ builtins = ["console.log", "alert", "break", "do", "in", "typeof", "case", "else
 "/", "/=",
 "}"];
 
-PGNs = ["", "1.d4 e6 2.a4 Qg5 3.a5 Qxc1 4.Ra2 c5 5.h3 Qxc2 6.Qc1 Qf5 7.d5 b5 8.Nf3 e5",
+PGNs = ["1. e4 d5 2. exd5", "1.d4 e6 2.a4 Qg5 3.a5 Qxc1 4.Ra2 c5 5.h3 Qxc2 6.Qc1 Qf5 7.d5 b5 8.Nf3 e5",
 "1. e4 e5 2. d4 d5 { C21 King's Pawn Game: Beyer Gambit } 3. exd5 exd4 4. Nd2 g5 5. Ne4 f5 6. Nc3 h5 7. Na4 b5 8. Rb1 Qe7+ 9. Qe2 Qxe2+ 10. Bxe2 d3 11. Kd2 dxe2 12. Kd3 e1=Q 13. Kd4 Qxg1 14. Kc3 Qxc1 15. Kd3 Qxb1 16. Rxb1 b4 17. Rg1 b3 18. Kd2 Bb4+ 19. Kd1 Ba6 20. Kc1 f4 21. Kd1 Bc5 22. Ke1 Bb4+ { White resigns } 0-1",
 "1. a4 { A00 Ware Opening } b5 2. a5 c5 3. e4 b4 4. Bb5 g5 5. Qh5 g4 6. Qxh7 f6 7. Qh3 Kf7 8. d3 Ke8 9. Kd2 Bh6+ { Draw } 1/2-1/2",
 "1. a4 { A00 Ware Opening } d5 2. b4 c5 3. e4 Bd7 4. bxc5 f6 5. a5 g5 6. e5 h5 7. Bd3 Bg7 8. Bf5 Qb6 9. Kf1 Qa6+ { Draw } 1/2-1/2",
@@ -65,7 +65,7 @@ FENToTokenPart = function(FEN){
 	} else {
 		number = parseInt(a, 2);//%numOfTokens;
 	}
-	console.log(checks);
+	//console.log(checks);
 	if(checks.indexOf(/q/) > -1){
 		//BLACK CHECK
 		return {type:"identifier", value: number}
@@ -84,9 +84,9 @@ FENToTokenPart = function(FEN){
 }
 
 toASCII = function(number){
-	console.log(number+2);
-	console.log(String.fromCharCode(number));
-	console.log("hi");
+	//console.log(number+2);
+	//console.log(String.fromCharCode(number));
+	//console.log("hi");
 	return String.fromCharCode(number);
 }
 
@@ -98,7 +98,7 @@ tokenizer = function(FENs){
 	token = '';
 	for(z = 0; z < FENs.length; z++){
 		subtoken = FENToTokenPart(FENs[z]);
-		console.log(subtoken.type);
+		//console.log(subtoken.type);
 		//PUSH TOKENS AND DO STUFF IF WE'RE DONE WITH READING IN THAT MULTI-BOARD TOKENS
 		if(subtoken.type == "checkmate"){
 			inNumber = !inNumber;
@@ -134,14 +134,14 @@ tokenizer = function(FENs){
 			inString = true;
 		}
 		if(subtoken.type == "reserved"){
-			console.log(tokens);
-			console.log(subtoken.value);
-			console.log(builtins[subtoken.value]);
+			//console.log(tokens);
+			//console.log(subtoken.value);
+			//console.log(builtins[subtoken.value]);
 			tokens.push(builtins[subtoken.value%builtins.length]);
 		}
 	}
 	//CASTLING FOR DECIMAL POINT
-	console.log(tokens);
+	//console.log(tokens);
 	return tokens;
 }
 
