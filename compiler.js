@@ -16,6 +16,7 @@ PGNs = ["", "1.d4 e6 2.a4 Qg5 3.a5 Qxc1 4.Ra2 c5 5.h3 Qxc2 6.Qc1 Qf5 7.d5 b5 8.N
 "1. a4 { A00 Ware Opening } b5 2. a5 c5 3. e4 b4 4. Bb5 g5 5. Qh5 g4 6. Qxh7 f6 7. Qh3 Kf7 8. d3 Ke8 9. Kd2 Bh6+ { Draw } 1/2-1/2",
 "1. a4 { A00 Ware Opening } d5 2. b4 c5 3. e4 Bd7 4. bxc5 f6 5. a5 g5 6. e5 h5 7. Bd3 Bg7 8. Bf5 Qb6 9. Kf1 Qa6+ { Draw } 1/2-1/2",
 "1. a4 { A00 Ware Opening } d5 2. d4 Kd7 3. b4 Kc6 4. a5 Kb5 5. c3 Kc4 6. b5 e5 7. dxe5 Qh4 8. Bg5 Qg4 9. f3 Qh4+ { Draw } 1/2-1/2",
+"1. a4 { A00 Ware Opening } b5 2. a5 b4 3. Ra4 h6 4. f4 e6 5. e4 c6 6. Bc4 f6 7. d4 Qe7 8. Qd2 Qf7 9. Qd1 Qh5 10. Qd2 Qh4+ 11. Qf2 Qg5 12. Bxe6 Kd8 13. Kd1 Ke8 14. Bxd7+ Kd8 15. Bxc6 Nxc6 16. Ke2 Qxa5 17. f5 Ke8 18. Bxh6 Kd8 19. Bxg7 Nh6 20. Bxh6 Ke8 21. Bd2 Qb5+ 22. Ke1 Rh3 23. gxh3 Qb6 24. Qf1 Qb5 25. Qf2 Qb6 26. Ke2 Qb5+ { Draw } 1/2-1/2",
 "1. a4 { A00 Ware Opening } f5 2. d4 e5 3. d5 Bb4+ 4. Qd2 { Draw } 1/2-1/2"];
 
 boardToBinary = function(string){
