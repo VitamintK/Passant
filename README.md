@@ -1,4 +1,5 @@
-# Passant Manifesto (please 'star' this repository.  if we get over 100 stars, I'll put the right parenthesis back.
+# Passant Manifesto (please 'star' this repository.
+if we get over 100 stars, I'll put the right parenthesis back.
 A programming language made up of chess games
 
 Passant is a programming language (which some may describe as esoteric rather than functional [although it is functional in the technical sense of the word, it is indeed true that some may view the language as not functional in the sense of the word "things that are functional can function well and are thus functioning and functional"]).
