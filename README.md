@@ -19,7 +19,7 @@ The alphabet of Passant is the GAME, which stands for "GAMEs're Agnostic of Mean
 
 t0-do
 
-## WASTE: Wang-Aziz-Suasin-Transposition-indifferent-Encoding & KASTLE: Kevin-Aziz-Suasin-Turnupcauseit's-Lit-Encoding
+## KASTLE: Kevin-Aziz-Suasin-Transposition-Lumping-Encoding
 
 to-do
 
