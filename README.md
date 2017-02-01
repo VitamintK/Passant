@@ -9,19 +9,20 @@ The abstract notion of a chess game is, while intriguing, not convenient for com
 
 However, we don't presume to constrain all implementations of the language to this specific definition of "chess game", and so you may indeed play programs in this language by yourself or with a friend on a physical chessboard.
 
-This compiler can be viewed at /compiler.js and heavily uses the open-source chess.js library to do the hard work of parsing the algebraic notation of games in PGN and translating those to board states (which are intermediarily represented in FEN).
+This compiler can be viewed at [/compiler.js](/compiler.js) and heavily uses the open-source chess.js library to do the hard work of parsing the algebraic notation of games in PGN and translating those to board states (which are intermediarily represented in FEN).
 
 # What is Passant?: An Explanation in English
 
-## GAMEs: the Fundamental Building Blocks of Passant
+<!---## GAMEs: the Fundamental Building Blocks of Passant
 
 The alphabet of Passant is the GAME, which stands for "GAMEs're Agnostic of Meaning or Encodings".  Like the name implies, GAMEs are agnostic of meaning or encodings.  Which is to say that a GAME can be interpreted in various ways depending on context within the program.
+-->
 
 t0-do
 
 ## KASTLE: Kevin-Aziz-Suasin-Transposition-Lumping-Encoding
 
-to-do
+We define an encoding of a 
 
 # What is Passant?: An Explanation in Gibberish
 
