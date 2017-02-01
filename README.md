@@ -24,11 +24,9 @@ t0-do
 
 We define a new method of encoding a chessboard state to a sequence of bits.
 
-![example of chessboard](/readme-assets/game-of-the-century.png)
-
 <figure>
   <img
-  src="/readme-assets/game-of-the-century.png"
+  src="/readme-assets/game-of-the-century-small.png"
   alt="test">	
   <figcaption>Test figure tags in github flavored md</figcaption>
 </figure>
