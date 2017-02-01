@@ -24,12 +24,12 @@ t0-do
 
 We define a new method of encoding a chessboard state to a sequence of bits.
 
-<figure>
-  <img
-  src="/readme-assets/game-of-the-century-queen-sacrifice-smol.png"
+<div style="text-align: center">
+  <img style="border: black 3px"
+  src="/readme-assets/game-of-the-century-queen-sacrifice.png"
   alt="test">	
   <figcaption>The KASTL Encoding of this board-state is `000111010`</figcaption>
-</figure>
+</div>
 
 <!---# What is Passant?: An Explanation in Gibberish
 
