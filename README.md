@@ -26,9 +26,9 @@ We define a new method of encoding a chessboard state to a sequence of bits.
 
 <figure>
   <img
-  src="/readme-assets/game-of-the-century-small.png"
+  src="/readme-assets/game-of-the-century-queen-sacrifice-smol.png"
   alt="test">	
-  <figcaption>Test figure tags in github flavored md</figcaption>
+  <figcaption>The KASTL Encoding of this board-state is `000111010`</figcaption>
 </figure>
 
 <!---# What is Passant?: An Explanation in Gibberish
