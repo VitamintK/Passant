@@ -22,11 +22,20 @@ t0-do
 
 ## KASTLE: Kevin-Aziz-Suasin-Transposition-Lumping-Encoding
 
-We define an encoding of a 
+We define a new method of encoding a chessboard state to a sequence of bits.
 
-# What is Passant?: An Explanation in Gibberish
+![example of chessboard](/readme-assets/game-of-the-century.png)
 
-to-do
+<figure>
+  <img
+  src="/readme-assets/game-of-the-century.png"
+  alt="test">	
+  <figcaption>Test figure tags in github flavored md</figcaption>
+</figure>
+
+<!---# What is Passant?: An Explanation in Gibberish
+
+to-do -->
 
 # Language Philosophy: Guiding Principles
 
