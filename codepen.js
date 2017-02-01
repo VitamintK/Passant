@@ -3,6 +3,7 @@ var board,
   statusEl = $('#status'),
   fenEl = $('#fen'),
   pgnEl = $('#pgn');
+  kastleEl = $('#kastle');
 
 // do not pick up pieces if the game is over
 // only pick up pieces for the side to move
@@ -89,7 +90,13 @@ var updateStatus = function() {
   statusEl.html(status);
   fenEl.html(game.fen() + endFen);
   pgnEl.html(game.pgn());
-};
+  if(typeof(boardToBinary)==='undefined'){
+    kastleEl.html('0');
+  } else {
+    kastle = boardToBinary(game.fen().split(' ')[0])
+    kastleEl.html((kastle=='')?'0':kastle);
+  }
+}
 
 var PGN2FEN = function(PGN){
     var convert = new Chess();

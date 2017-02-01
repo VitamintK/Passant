@@ -46,6 +46,17 @@ span#fen{
   font-weight:300;
   color:#FFF;
 }
+p#kastle-wrapper {
+  font-weight:900;
+  font-size:1.25em;
+  max-width:600px;
+  margin:0 auto;
+}
+span#kastle{
+  font-size:0.85em;
+  font-weight:300;
+  color:#FFF;
+}
 p#pgn-wrap {
   font-weight:900;
   font-size:1.25em;

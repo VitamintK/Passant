@@ -39,7 +39,7 @@ MATH = ["1. e4 d5 2. exd5",
 
 PGNstring = PGNs.join(";");
 
-boardToBinary = function(string){
+var boardToBinary = function(string){
 	subString = "";
 	finalFinalString = "";
 	for (i = 0; i < string.length; i++){
