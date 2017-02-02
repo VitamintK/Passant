@@ -32,13 +32,20 @@ We define a new method of encoding a chessboard state to a sequence of bits.
 
 Informally, to get the KASTLE of a chessboard state, you view the chessboard, top-down, from White's perspective.  Then, you scan the chessboard row-by-row top-to-bottom, left-to-right. (Like reading lines of text.)  Construct a bitstring by adding a 1 every time you encounter a white piece, and adding a 0 every time you encounter a black piece.  So, for example, the starting position would be `'00000000000000001111111111111111'`.  Then, you match as many 0s from the beginning and 1s from the end as you can, and delete them.  In essence, any leading 0 annihilates with any trailing 1.  So, the starting position then becomes `''` (the empty string).
 
-Python code:   
+Python psuedocode:   
 ```python
-def KASTLE(bits):
-	#
-	while(s[0] == '0' and s[-1] == '1'):
-		s = s[1:-1]```
-
+def KASTLE(board):
+	bits = ''
+	for row in board:
+		for cell in row:
+			if cell.contains_white_piece():
+				bits+='1'
+			elif cell.contains_black_piece():
+				bits+='0'
+	#remove an equal amount of leading 0s and trailing 1s
+	while(bits[0] == '0' and bits[-1] == '1'):
+		bits = bits[1:-1]
+```
 <!---# What is Passant?: An Explanation in Gibberish
 
 to-do -->
@@ -49,4 +56,4 @@ The vision for Passant was to provide a programming language that espoused the e
 
 # Coding in Passant: A Style Guide.
 
-to-do
+Although Passant is trivially turing-complete (since there are Passant aliases for every javascript built-in and therefore supports loops and conditionals), 
