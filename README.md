@@ -22,12 +22,22 @@ t0-do
 
 ## KASTLE: Kevin-Aziz-Suasin-Transposition-Lumping-Encoding
 
+(documentation in progress)  
 We define a new method of encoding a chessboard state to a sequence of bits.
 
  <img border="5" width="200"
   src="/readme-assets/game-of-the-century-queen-sacrifice.png"
   alt="test">	
   <figcaption>The KASTL Encoding of this board-state is <code>000111010</code></figcaption>
+
+Informally, to get the KASTLE of a chessboard state, you view the chessboard, top-down, from White's perspective.  Then, you scan the chessboard row-by-row top-to-bottom, left-to-right. (Like reading lines of text.)  Construct a bitstring by adding a 1 every time you encounter a white piece, and adding a 0 every time you encounter a black piece.  So, for example, the starting position would be `'00000000000000001111111111111111'`.  Then, you match as many 0s from the beginning and 1s from the end as you can, and delete them.  In essence, any leading 0 annihilates with any trailing 1.  So, the starting position then becomes `''` (the empty string).
+
+Python code:   
+```python
+def KASTLE(bits):
+	#
+	while(s[0] == '0' and s[-1] == '1'):
+		s = s[1:-1]```
 
 <!---# What is Passant?: An Explanation in Gibberish
 
