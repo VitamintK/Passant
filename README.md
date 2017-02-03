@@ -36,8 +36,8 @@ Python pseudocode:
 ```python
 def KASTLE(board):
 	bits = ''
-	for row in board:
-		for cell in row:
+	for row in board: #from 8 to 1
+		for cell in row: #from a to h
 			if cell.contains_white_piece():
 				bits+='1'
 			elif cell.contains_black_piece():
@@ -45,6 +45,7 @@ def KASTLE(board):
 	#remove an equal amount of leading 0s and trailing 1s
 	while(bits[0] == '0' and bits[-1] == '1'):
 		bits = bits[1:-1]
+	return bits
 ```
 <!---# What is Passant?: An Explanation in Gibberish
 
